@@ -1,8 +1,8 @@
-CREATE TABLE books (
+CREATE TABLE users (
   ID SERIAL PRIMARY KEY,
-  author VARCHAR(255) NOT NULL,
-  title VARCHAR(255) NOT NULL
+  first_name VARCHAR(255) NOT NULL,
+  last_name VARCHAR(255) NOT NULL
 );
 
-INSERT INTO books (author, title)
-VALUES  ('J.K. Rowling', 'Harry Potter');
+INSERT INTO users (first_name, last_name)
+VALUES  ('john', 'doe');
