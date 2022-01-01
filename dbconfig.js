@@ -15,6 +15,7 @@ const pool = new Pool({
     // ssl: {
     //     rejectUnauthorized: false
     // }
+    ssl: isProduction ? {rejectUnauthorized: false} : null
 })
 
 module.exports = pool
